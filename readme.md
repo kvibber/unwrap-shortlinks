@@ -1,6 +1,6 @@
 # Unwrap Shortlinks
 
-Stable tag: 0.2.1
+Stable tag: 0.2.2  
 Tags: urls, links  
 Requires at least: 3.0  
 Tested up to: 5.9  
