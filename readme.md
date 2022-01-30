@@ -41,7 +41,11 @@ It won't keep following the trail. Just in case there's a loop, or the destinati
 But if the destination is another known shortener (say you had a t.co link that redirected to a bit.ly link), the next time you save the post, it will follow that one to its destination.
 
 
-## Notes
+## Changelog
+
+### [0.2.2] - 2022-01-29
+
+* Initial release based on the code I've been running locally for years, plus changes requested by the WordPress plugin review team.
 
 [Source on Codeberg](https://codeberg.org/kvibber/unwrap-shortlinks).
 
