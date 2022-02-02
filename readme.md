@@ -40,6 +40,14 @@ It won't keep following the trail. Just in case there's a loop, or the destinati
 
 But if the destination is another known shortener (say you had a t.co link that redirected to a bit.ly link), the next time you save the post, it will follow that one to its destination.
 
+### How do I add a shortener to the list?
+
+It's not supported yet, but I plan on adding an options page for it.
+
+### What about compatibility?
+
+It should work going back to the classic editor and forward to the block editor. It even works on [ClassicPress](https://www.classicpress.net/).
+
 
 ## Changelog
 
