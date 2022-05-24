@@ -13,20 +13,20 @@ Follow shortened links (t.co, bit.ly, etc) and expand them so that your blog pos
 ## Description
 
 Automatically expands URLs at the following known link shorteners when you save a post:
-t.co
-bit.ly
-ow.ly
-j.mp
-is.gd
-trib.al
-buff.ly
-wp.me
-tmblr.co
-tinyurl.com
-goo.gl
-dlvr.it
-fb.me
-qr.ae
+* t.co
+* bit.ly
+* ow.ly
+* j.mp
+* is.gd
+* trib.al
+* buff.ly
+* wp.me
+* tmblr.co
+* tinyurl.com
+* goo.gl
+* dlvr.it
+* fb.me
+* qr.ae
 
 ## Installation
 
@@ -59,5 +59,6 @@ It should work going back to the classic editor and forward to the block editor.
 * Initial release based on the code I've been running locally for years, plus changes requested by the WordPress plugin review team.
 
 [Source on Codeberg](https://codeberg.org/kvibber/unwrap-shortlinks).
+[Plugin page at WordPress](https://wordpress.org/plugins/unwrap-shortlinks/).
 
 (c) 2016-2022 [Kelson Vibber](https://kvibber.com/)
