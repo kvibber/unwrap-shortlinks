@@ -3,7 +3,7 @@
 Stable tag: 0.2.2  
 Tags: urls, links  
 Requires at least: 3.0  
-Tested up to: 5.9  
+Tested up to: 6.0  
 Contributors: Kelson  
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -50,6 +50,9 @@ It should work going back to the classic editor and forward to the block editor.
 
 
 ## Changelog
+
+### 2022-05-24
+* Confirmed compatible with WordPress 6.0
 
 ### [0.2.2] - 2022-01-29
 
