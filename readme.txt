@@ -58,10 +58,6 @@ sudo setsebool -P httpd_can_network_connect true
 
 Thanks to [igienger's post](https://wordpress.org/support/topic/error-curl-error-7-3/#post-12637512) on the WordPress support forums!
 
-= What about compatibility? =
-
-It should work going back to the classic editor and forward to the block editor. It even works on [ClassicPress](https://www.classicpress.net/).
-
 == Changelog ==
 
 = [0.2.3] - 2022-06-10 =

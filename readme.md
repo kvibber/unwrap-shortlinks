@@ -60,6 +60,8 @@ Thanks to [igienger's post](https://wordpress.org/support/topic/error-curl-error
 
 ### What about compatibility?
 
+TODO: It's stopped working with the block editor. I'll fix this asap.
+
 It should work going back to the classic editor and forward to the block editor. It even works on [ClassicPress](https://www.classicpress.net/).
 
 ## Changelog
