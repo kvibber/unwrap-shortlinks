@@ -12,7 +12,7 @@ For ClassicPress
 Requires: 1.0  
 Tested: 1.4.1
 
-Follow shortened links (t.co, bit.ly, etc) and expand them so that your blog post will point directly to the destination.
+Follows shortened links (t.co, bit.ly, etc) and expands them so that your blog post will point directly to the destination.
 
 ## Description
 
