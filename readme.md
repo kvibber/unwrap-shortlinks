@@ -1,6 +1,6 @@
 # Unwrap Shortlinks
 
-Stable tag: 0.2.3  
+Stable tag: 0.2.4  
 Tags: urls, links, classicpress  
 Requires at least: 3.0  
 Tested up to: 6.0  
@@ -60,11 +60,12 @@ Thanks to [igienger's post](https://wordpress.org/support/topic/error-curl-error
 
 ### What about compatibility?
 
-TODO: It's stopped working with the block editor. I'll fix this asap.
-
 It should work going back to the classic editor and forward to the block editor. It even works on [ClassicPress](https://www.classicpress.net/).
 
 ## Changelog
+
+### [0.2.4] - 2022-06-13
+* Fix bugs with plaintext URLs at the end of a block.
 
 ### [0.2.3] - 2022-06-10
 * Fix bugs with tinyurl.com and URLs inside HTML links. (Plaintext URLs were working fine.)

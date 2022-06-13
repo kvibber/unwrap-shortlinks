@@ -1,6 +1,6 @@
 === Unwrap Shortlinks ===
 
-Stable tag: 0.2.3  
+Stable tag: 0.2.4  
 Tags: urls, links, classicpress  
 Requires at least: 3.0  
 Tested up to: 6.0  
@@ -59,6 +59,9 @@ sudo setsebool -P httpd_can_network_connect true
 Thanks to [igienger's post](https://wordpress.org/support/topic/error-curl-error-7-3/#post-12637512) on the WordPress support forums!
 
 == Changelog ==
+
+= [0.2.4] - 2022-06-13 =
+* Fix bugs with plaintext URLs at the end of a block.
 
 = [0.2.3] - 2022-06-10 =
 * Fix bugs with tinyurl.com and URLs inside HTML links. (Plaintext URLs were working fine.)
