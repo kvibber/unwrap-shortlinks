@@ -71,6 +71,7 @@ Thanks to [igienger's post](https://wordpress.org/support/topic/error-curl-error
 * Initial release based on the code I've been running locally for years, plus changes requested by the WordPress plugin review team.
 
 [Source on Codeberg](https://codeberg.org/kvibber/unwrap-shortlinks).  
-[Plugin page at WordPress](https://wordpress.org/plugins/unwrap-shortlinks/).
+[Plugin page at WordPress](https://wordpress.org/plugins/unwrap-shortlinks/).  
+[Plugin page at ClassicPress](https://directory.classicpress.net/plugins/unwrap-shortlinks).
 
 (c) 2016-2022 [Kelson Vibber](https://kvibber.com/)
