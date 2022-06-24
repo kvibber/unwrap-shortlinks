@@ -15,7 +15,7 @@
 function ktv_unwrap_shortlinks($content) {
 	preg_match_all('/\b(https?:\/\/(?:t\.co|bit\.ly|j\.mp|ow\.ly|is\.gd|trib\.al|buff\.ly|tmblr\.co|wp\.me|tinyurl\.com|goo\.gl|dlvr\.it|fb\.me|qr\.ae|aka\.ms)\/[^\s"\'<>]+)\b/', $content, $matches, PREG_PATTERN_ORDER);
 	foreach ($matches[1] as $link) {
-		$getlink = ktv_unwrap_shortlinks_replace($link);
+		$getlink = ktv_unwrap_shortlinks_replace($link, 5);
 		if ($getlink != "")
 			$content = str_replace($link, $getlink, $content);
 	}
@@ -24,15 +24,22 @@ function ktv_unwrap_shortlinks($content) {
 
 
 
-function ktv_unwrap_shortlinks_replace($url) {
+function ktv_unwrap_shortlinks_replace($url, $countdown) {
 	// make a head request and don't follow redirection, just look at the response.
 	$response = wp_remote_head( $url ); //, array( 'redirection' => 0 ) );
 	$status = wp_remote_retrieve_response_code( $response );
 	$finalURL = wp_remote_retrieve_header( $response, 'location' );
 	
-	// If it was a redirect, return the next URL.
+	// If it was a redirect, get the next URL
 	if ($status == 301 || $status == 302 || $status == 307 || $status == 308) {
-		return esc_url($finalURL);
+		// TODO Is it also a redirector? Do we have iterations left?
+		// If so, try to follow that one!
+		if( $countdown > 0 && preg_match('/\b(https?:\/\/(?:t\.co|bit\.ly|j\.mp|ow\.ly|is\.gd|trib\.al|buff\.ly|tmblr\.co|wp\.me|tinyurl\.com|goo\.gl|dlvr\.it|fb\.me|qr\.ae|aka\.ms)\/[^\s"\'<>]+)\b/', $finalURL) ) {
+			return ktv_unwrap_shortlinks_replace($finalURL, $countdown - 1);
+		} else {
+			// Otherwise, send it back up the chain!
+			return esc_url($finalURL);
+		}
 	}
 	// We didn't get anything, or it didn't redirect, so let's return a blank.
 	return "";

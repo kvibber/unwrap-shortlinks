@@ -31,6 +31,7 @@ Automatically expands URLs at the following known link shorteners when you save 
 * dlvr.it
 * fb.me
 * qr.ae
+* aka.ms
 
 ## Installation
 
