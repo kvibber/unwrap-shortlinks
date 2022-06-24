@@ -1,6 +1,6 @@
 # Unwrap Shortlinks
 
-Stable tag: 0.2.4  
+Stable tag: 0.3.0
 Tags: urls, links, classicpress  
 Requires at least: 3.0  
 Tested up to: 6.0  
@@ -41,7 +41,7 @@ Install the plugin and activate it. The next time you paste a supported short UR
 
 ### What if the destination redirects to another link?
 
-At the moment it'll stop at the first one to avoid infinite redirect loops. But if the destination is another known shortener (say you had a t.co link that redirected to a bit.ly link), the next time you save the post, it will follow that one to its destination. TODO: I plan to make it follow a limited chain of known shorteners.
+If the destination is another known URL shortener (ex. t.co pointing to bit.ly pointing to wp.me pointing to a blog post), it'll keep going up to 5 levels (to avoid infinite loops!) or until it gets a URL that isn't on the list. 
 
 ### How do I add a shortener to the list?
 
@@ -64,6 +64,9 @@ Thanks to [igienger's post](https://wordpress.org/support/topic/error-curl-error
 It should work going back to the classic editor and forward to the block editor. It even works on [ClassicPress](https://www.classicpress.net/).
 
 ## Changelog
+
+### [0.3.0] - 2022-06-23
+* Follow link trails, add aka.ms.
 
 ### [0.2.4] - 2022-06-13
 * Fix bugs with plaintext URLs at the end of a block.

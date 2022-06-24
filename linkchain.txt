@@ -1,3 +1,5 @@
+A chain of redirections starting with the source URL. Each line redirects to the previous one.
+
 https://hyperborea.org/journal/2022/04/corrupted-gnome/
 https://hyperborea.org/journal/?p=81451
 https://wp.me/p4vcr-lbJ
@@ -7,3 +9,7 @@ http://ow.ly/Vcq050JGjmM
 https://bit.ly/3xT4SwX
 https://t.co/kTzFTX65HT
 
+1. Following the t.co link should get you to the post permalink.
+2. Unwrap-shortlinks should replace the t.co link with the blog ?p=xyz link.
+
+TODO: Also check URLs ending in ?p=[0-9]+, follow them once and accept the result if the URLs match up to the previous /
