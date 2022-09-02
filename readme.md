@@ -65,6 +65,9 @@ It should work going back to the classic editor and forward to the block editor.
 
 ## Changelog
 
+### [0.3.1] - 2022-09-01
+* Update headers for new ClassicPress plugin directory. No changes affecting WordPress
+
 ### [0.3.0] - 2022-06-23
 * Follow link trails, add aka.ms.
 
