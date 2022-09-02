@@ -3,7 +3,9 @@
  Plugin Name: Unwrap Shortlinks
  Plugin URI: https://codeberg.org/kvibber/unwrap-shortlinks
  Description: Follow shortened links (t.co, bit.ly, etc) and expand them so that your blog post will point directly to the destination.
- Version: 0.3.0
+ Requires PHP: 7.0
+ Requires CP: 1.0
+ Version: 0.3.1
  Author: Kelson Vibber
  Author URI: https://kvibber.com
  License: GPLv2 or later  
