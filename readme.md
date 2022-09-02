@@ -1,6 +1,6 @@
 # Unwrap Shortlinks
 
-Stable tag: 0.3.0
+Stable tag: 0.3.1
 Tags: urls, links, classicpress  
 Requires at least: 3.0  
 Tested up to: 6.0  

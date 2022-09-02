@@ -16,8 +16,7 @@ if [ ! -d build ]; then
 fi
 
 mkdir build/$ZIPNAME
-cp -p *.php *.txt *.md LICENSE "build/$ZIPNAME"
-rm "build/$ZIPNAME/readme.md"
+cp -p *.php *.md LICENSE "build/$ZIPNAME"
 
 echo "Building $ZIPNAME"
 cd build && zip -r "$ZIPNAME.zip" "$ZIPNAME"
