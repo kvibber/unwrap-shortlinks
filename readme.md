@@ -1,16 +1,10 @@
 # Unwrap Shortlinks
 
-Stable tag: 0.3.1
+Stable tag: 0.3.2  
 Tags: urls, links, classicpress  
-Requires at least: 3.0  
-Tested up to: 6.0  
-Requires PHP: 7.0  
+Tested up to: 6.1  
 Contributors: Kelson  
-License: GPLv2 or later  
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-For ClassicPress  
-Requires: 1.0  
-Tested: 1.4.1
+License: GPLv2 or later
 
 Follows shortened links (t.co, bit.ly, etc) and expands them so that your blog post will point directly to the destination.
 
@@ -64,6 +58,9 @@ Thanks to [igienger's post](https://wordpress.org/support/topic/error-curl-error
 It should work going back to the classic editor and forward to the block editor. It even works on [ClassicPress](https://www.classicpress.net/).
 
 ## Changelog
+
+### [0.3.2] - 2022-10-29
+* Tested up through 6.1, clean up headers, no functional changes.
 
 ### [0.3.1] - 2022-09-01
 * Update headers for new ClassicPress plugin directory. No changes affecting WordPress
