@@ -1,8 +1,8 @@
 # Unwrap Shortlinks
 
-Stable tag: 0.3.2  
+Stable tag: 0.3.3  
 Tags: urls, links, classicpress  
-Tested up to: 6.2  
+Tested up to: 6.3  
 Contributors: Kelson  
 License: GPLv2 or later
 
@@ -20,12 +20,13 @@ Automatically expands URLs at the following known link shorteners when you save 
 * buff.ly
 * wp.me
 * tmblr.co
-* tinyurl.com
 * goo.gl
 * dlvr.it
 * fb.me
 * qr.ae
 * aka.ms
+
+NOTE: tinyurl.com has been removed from the list because they are blocking automated requests. (See changelog)
 
 ## Installation
 
@@ -58,6 +59,9 @@ Thanks to [igienger's post](https://wordpress.org/support/topic/error-curl-error
 It should work going back to the classic editor and forward to the block editor. It even works on [ClassicPress](https://www.classicpress.net/).
 
 ## Changelog
+
+### [0.3.3]
+* tinyurl.com is screening requests using Cloudflare, and a simple curl request is no longer allowed through. Removing it from the list.
 
 ### [0.3.2] - 2022-10-29
 * Tested up through 6.1, clean up headers, no functional changes.

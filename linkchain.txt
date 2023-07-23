@@ -10,6 +10,9 @@ https://bit.ly/3xT4SwX
 https://t.co/kTzFTX65HT
 
 1. Following the t.co link should get you to the post permalink.
-2. Unwrap-shortlinks should replace the t.co link with the blog ?p=xyz link.
+2. Unwrap-shortlinks used to replace the t.co link with the blog ?p=xyz link,
+   but since TinyURL started screening requests using CloudFlare (sometime before
+   July 2023, requiring a JavaScript-capable browser), we can't follow it anymore.
+   So now the plugin can only unwrap the t.co link as far as the tinyurl.com link.
 
 TODO: Also check URLs ending in ?p=[0-9]+, follow them once and accept the result if the URLs match up to the previous /
