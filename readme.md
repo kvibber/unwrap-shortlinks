@@ -2,7 +2,7 @@
 
 Stable tag: 0.3.3  
 Tags: urls, links, classicpress  
-Tested up to: 6.3  
+Tested up to: 6.4  
 Contributors: Kelson  
 License: GPLv2 or later
 
