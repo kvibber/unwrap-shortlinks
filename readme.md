@@ -2,7 +2,7 @@
 
 Stable tag: 0.3.3  
 Tags: urls, links, classicpress  
-Tested up to: 6.4  
+Tested up to: 6.5  
 Contributors: Kelson  
 License: GPLv2 or later
 
@@ -86,4 +86,4 @@ It should work going back to the classic editor and forward to the block editor.
 [Plugin page at WordPress](https://wordpress.org/plugins/unwrap-shortlinks/).  
 [Plugin page at ClassicPress](https://directory.classicpress.net/plugins/unwrap-shortlinks).
 
-(c) 2016-2022 [Kelson Vibber](https://kvibber.com/)
+(c) 2016-2024 [Kelson Vibber](https://kvibber.com/)
