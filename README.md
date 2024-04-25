@@ -83,6 +83,7 @@ It should work going back to the classic editor and forward to the block editor.
 * Initial release based on the code I've been running locally for years, plus changes requested by the WordPress plugin review team.
 
 [Source on Codeberg](https://codeberg.org/kvibber/unwrap-shortlinks).  
+[Mirror on GitHub](https://github.com/kvibber/unwrap-shortlinks).  
 [Plugin page at WordPress](https://wordpress.org/plugins/unwrap-shortlinks/).  
 [Plugin page at ClassicPress](https://directory.classicpress.net/plugins/unwrap-shortlinks).
 
