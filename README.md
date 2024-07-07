@@ -1,8 +1,8 @@
 # Unwrap Shortlinks
 
-Stable tag: 0.3.3  
+Stable tag: 0.3.4  
 Tags: urls, links, classicpress  
-Tested up to: 6.5  
+Tested up to: 6.6  
 Contributors: Kelson  
 License: GPLv2 or later
 
@@ -25,8 +25,7 @@ Automatically expands URLs at the following known link shorteners when you save 
 * fb.me
 * qr.ae
 * aka.ms
-
-NOTE: tinyurl.com has been removed from the list because they are blocking automated requests. (See changelog)
+* tinyurl.com
 
 ## Installation
 
@@ -60,7 +59,10 @@ It should work going back to the classic editor and forward to the block editor.
 
 ## Changelog
 
-### [0.3.3]
+### [0.3.4] - 2024-07-07
+* tinyurl.com is accepting curl requests again, so I've added it back to the list.
+
+### [0.3.3] - 2023-07-22
 * tinyurl.com is screening requests using Cloudflare, and a simple curl request is no longer allowed through. Removing it from the list.
 
 ### [0.3.2] - 2022-10-29
