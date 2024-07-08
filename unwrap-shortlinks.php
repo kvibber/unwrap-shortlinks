@@ -16,9 +16,9 @@
 // ini_set('display_errors', '1'); ini_set('error_reporting', E_ALL);
 
 function ktv_unwrap_shortlinks($content) {
-	preg_match_all('/\b(https?:\/\/(?:t\.co|bit\.ly|j\.mp|ow\.ly|is\.gd|trib\.al|buff\.ly|tmblr\.co|wp\.me|goo\.gl|dlvr\.it|fb\.me|qr\.ae|aka\.ms|tinyurl\.com)\/[^\s"\'<>]+)\b/', $content, $matches, PREG_PATTERN_ORDER);
+	preg_match_all('/\b(https?:\/\/(?:[^\s"\'<>]+\/\?p=[0-9]+|(?:t\.co|bit\.ly|j\.mp|ow\.ly|is\.gd|trib\.al|buff\.ly|tmblr\.co|wp\.me|goo\.gl|dlvr\.it|fb\.me|qr\.ae|aka\.ms|tinyurl\.com)\/[^\s"\'<>]+))\b/', $content, $matches, PREG_PATTERN_ORDER);
 	foreach ($matches[1] as $link) {
-		$getlink = ktv_unwrap_shortlinks_replace($link, 5);
+		$getlink = ktv_unwrap_shortlinks_replace($link, 8);
 		if ($getlink != "")
 			$content = str_replace($link, $getlink, $content);
 	}
@@ -35,9 +35,9 @@ function ktv_unwrap_shortlinks_replace($url, $countdown) {
 	
 	// If it was a redirect, get the next URL
 	if ($status == 301 || $status == 302 || $status == 307 || $status == 308) {
-		// TODO Is it also a redirector? Do we have iterations left?
+		// Is it also a redirector? Do we have iterations left?
 		// If so, try to follow that one!
-		if( $countdown > 0 && preg_match('/\b(https?:\/\/(?:t\.co|bit\.ly|j\.mp|ow\.ly|is\.gd|trib\.al|buff\.ly|tmblr\.co|wp\.me|goo\.gl|dlvr\.it|fb\.me|qr\.ae|aka\.ms|tinyurl\.com)\/[^\s"\'<>]+)\b/', $finalURL) ) {
+		if( $countdown > 0 && preg_match('/\b(https?:\/\/(?:[^\s"\'<>]+\/\?p=[0-9]+|(?:t\.co|bit\.ly|j\.mp|ow\.ly|is\.gd|trib\.al|buff\.ly|tmblr\.co|wp\.me|goo\.gl|dlvr\.it|fb\.me|qr\.ae|aka\.ms|tinyurl\.com)\/[^\s"\'<>]+))\b/', $finalURL ) ) {
 			return ktv_unwrap_shortlinks_replace($finalURL, $countdown - 1);
 		} else {
 			// Otherwise, send it back up the chain!

@@ -6,7 +6,7 @@ Tested up to: 6.6
 Contributors: Kelson  
 License: GPLv2 or later
 
-Follows shortened links (t.co, bit.ly, etc) and expands them so that your blog post will point directly to the destination.
+Follows shortened links (t.co, bit.ly, etc) and WordPress' ?p=123-style links, and expands them so that your blog post will point directly to the destination.
 
 ## Description
 
@@ -35,7 +35,7 @@ Install the plugin and activate it. The next time you paste a supported short UR
 
 ### What if the destination redirects to another link?
 
-If the destination is another known URL shortener (ex. t.co pointing to bit.ly pointing to wp.me pointing to a blog post), it'll keep going up to 5 levels (to avoid infinite loops!) or until it gets a URL that isn't on the list. 
+If the destination is another known URL shortener (ex. t.co pointing to bit.ly pointing to wp.me pointing to a blog post), it'll keep going up to 8 levels (to avoid infinite loops!) or until it gets a URL that isn't on the list. 
 
 ### How do I add a shortener to the list?
 
@@ -60,6 +60,7 @@ It should work going back to the classic editor and forward to the block editor.
 ## Changelog
 
 ### [0.3.4] - 2024-07-07
+* Also follow WordPress' ?p=123 links if they redirect to a permalink.
 * tinyurl.com is accepting curl requests again, so I've added it back to the list.
 
 ### [0.3.3] - 2023-07-22
