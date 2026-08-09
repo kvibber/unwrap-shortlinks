@@ -1,5 +1,6 @@
 A chain of redirections starting with the source URL. Each line redirects to the previous one.
 
+https://journal.kvibber.com/2022/04/corrupted-gnome/
 https://hyperborea.org/journal/2022/04/corrupted-gnome/
 https://hyperborea.org/journal/?p=81451
 https://wp.me/p4vcr-lbJ
